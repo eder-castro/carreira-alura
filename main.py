@@ -3,6 +3,7 @@ from google import genai
 import dotenv
 from dotenv import load_dotenv
 import e_mails
+import time
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY")
 
@@ -11,10 +12,12 @@ cliente = genai.Client()
 def tratamento(emails):
     for numero, email in enumerate(emails):
         resposta = cliente.models.generate_content(
-            model = "gemini-2.5-flash",
+            model = "gemini-2.5-flash-lite",
             contents = f'''Vou te enviar o corpo de um e-mail e quero que você resuma em 1 linha, 
                             definindo o intuito do e-mail. Segue e-mail: {email}'''
         )
+        print("Esperando 10 segundos para não bloquear...\n")
+        time.sleep(10)
         print(f"E-mail {numero + 1}: {resposta.text}")
         print("-"* 50)
 
