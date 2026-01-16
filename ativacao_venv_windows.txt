@@ -1,0 +1,4 @@
+#Libera a execução de scripts nessa janela do windows até sair do VSCode
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+.\.venv\Scripts\activate
