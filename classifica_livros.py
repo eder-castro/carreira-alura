@@ -14,9 +14,25 @@ with open("livros.txt", "r", encoding="utf-8") as arquivo:
         lista_livros.append(linha.strip())
 
 classificacoes = []
+def obter_categorias(nome_do_livro):
+    cliente = genai.Client(api_key=GOOGLE_API_KEY_02)
+    resposta = cliente.models.generate_content(
+        model = "gemini-flash-lite-latest",
+        contents = f'''Vou te enviar o nome de um livro e quero que você obtenha a categoria deste livro em uma palavra. Você deve retornar somente a categoria, sem explicações nem textos adicionais.
+        
+        Exemplo:
+        Livro: A arte da guerra
+        Resenha: AutoAjuda
+
+        Segue nome do livro: {nome_do_livro}'''
+    )
+    #print("Esperando 60 segundos para não bloquear...\n")
+    #time.sleep(30)
+    classificacoes[-1].update({f"Categoria:":resposta.text})
+
 def obter_resenhas(lista_de_livros):
     cliente = genai.Client(api_key=GOOGLE_API_KEY_01)
-    cont = 0
+    conta = 0
     for livro in lista_de_livros:
         resposta = cliente.models.generate_content(
             model = "gemini-flash-lite-latest",
@@ -28,38 +44,21 @@ def obter_resenhas(lista_de_livros):
 
             Segue nome do livro: {livro}'''
         )
-        print("Esperando 60 segundos para não bloquear...\n")
-        time.sleep(60)
+        #print("Esperando 30 segundos para não bloquear...\n")
+        for cont in range(30, -1, -1):
+            print(f"{cont:02d}", end='\r', flush=True)
+            time.sleep (1)
+        #time.sleep(30)
         classificacoes.append({f"Livro:":livro ,"Resenha:":resposta.text})
-        cont+=1
-        print(f"Livro {cont}")
-        print(classificacoes)
+        obter_categorias(livro)
+        conta+=1
+        print(f"Livro {conta} OK!")
+        #print("OK")
+print(classificacoes)
 
 obter_resenhas(lista_livros)
-print("Resenhas OK")
+print('Resenha e Classificação obtidas. Veja o resultado no arquivo "livros_classificados.csv"')
 
-
-def obter_categorias(lista_de_livros):
-    cliente = genai.Client(api_key=GOOGLE_API_KEY_02)
-    for livro in lista_de_livros:
-        resposta = cliente.models.generate_content(
-            model = "gemini-flash-lite-latest",
-            contents = f'''Vou te enviar o nome de um livro e quero que você obtenha a categoria deste livro de forma sucinta. Você deve retornar somente a categoria, sem explicações nem textos adicionais.
-            
-            Exemplo:
-            Livro: A arte da guerra
-            Resenha: Auto-Ajuda
-
-            Segue nome do livro: {livro}'''
-        )
-        print("Esperando 60 segundos para não bloquear...\n")
-        time.sleep(60)
-        classificacoes.append({f"Categoria:":resposta.text})
-        print(classificacoes)
-
-obter_categorias(lista_livros)
-print("Categorias OK")
-
-print(classificacoes)
+#print(classificacoes)
 df_resenhas = pd.DataFrame(classificacoes)
 df_resenhas.to_csv("livros_classificados.csv",index="false", encoding="utf-8")
