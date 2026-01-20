@@ -18,3 +18,21 @@
 18-O homem mais rico da Babilônia
 19-Rápido e devagar
 20-Da imitação a inovação
+21-99 bottles of OO
+22-Entendendo algoritmos - ratinho
+23-Cracking the coding interview
+24-Seja egoísta com sua carreira
+25-Admirável Mundo Novo
+26-Fahrenheit 451
+27-Atlas de Nuvens
+28-A Fogueira das Vaidades
+29-Flores para Algernon
+30-Sapiens: Uma Breve História da Humanidade
+31-O Problema dos Três Corpos
+32-Rápido e devagar
+33-Sapiens
+33-Anti-Fragil
+34-As 33 estratégias de guerra
+35-O príncipe
+36-Lean startup
+37-The Thinking game
