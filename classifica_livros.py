@@ -37,7 +37,7 @@ def obter_categorias(nome_do_livro):
         cliente = cliente4
     ##### Chama o LLM passando o nome do livro e armazena Categoria devolvida na variavel "resposta"
     resposta = cliente.models.generate_content(
-        model = "gemini-flash-lite-latest",
+        model = "gemini-2.5-flash-lite",
         contents = f'''Vou te enviar o nome de um livro e quero que você obtenha a categoria deste livro em uma palavra. Você deve retornar somente a categoria, sem explicações nem textos adicionais.
         Exemplo:
         "Livro: A arte da guerra
@@ -58,7 +58,7 @@ def obter_resenhas(lista_de_livros):
     ##### Chama o LLM passando o nome do livro e armazena Resenha devolvida na variavel "resposta"
     for livro in lista_de_livros:
         resposta = cliente.models.generate_content(
-            model = "gemini-flash-lite-latest",
+            model = "gemini-2.5-flash-lite",
             contents = f'''Vou te enviar o nome de um livro e quero que você obtenha uma resenha curta, em no máximo 2 linhas. Você deve retornar somente a resenha, sem explicações nem textos adicionais.
             
             Exemplo:
@@ -68,7 +68,7 @@ def obter_resenhas(lista_de_livros):
             Segue nome do livro: {livro}'''
         )
         ##### Exibe uma contagem regressiva na tela, aguardando para enviar requisicao ao LLM depois deste tempo, evitando estouro de cota
-        for cont in range(30, -1, -1):
+        for cont in range(60, -1, -1):
             print(f"{cont:02d}", end='\r', flush=True)
             time.sleep (1)
 
