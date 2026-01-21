@@ -31,13 +31,13 @@ classificacoes = []
 def obter_categorias(nome_do_livro):
     ##### Se contador chegou a 19, usa outra chave de API
     global contador
-    if contador <= 19:
+    if contador < 19:
         cliente = cliente3
     else:
         cliente = cliente4
     ##### Chama o LLM passando o nome do livro e armazena Categoria devolvida na variavel "resposta"
     resposta = cliente.models.generate_content(
-        model = "gemini-2.5-flash-lite",
+        model = "gemini-2.5-flash-lite-preview-09-2025",
         contents = f'''Vou te enviar o nome de um livro e quero que você obtenha a categoria deste livro em uma palavra. Você deve retornar somente a categoria, sem explicações nem textos adicionais.
         Exemplo:
         "Livro: A arte da guerra
@@ -51,14 +51,14 @@ def obter_categorias(nome_do_livro):
 def obter_resenhas(lista_de_livros):
     ##### Se contador chegou a 19, usa outra chave de API
     global contador
-    if contador <= 19:
+    if contador < 19:
         cliente = cliente1
     else:
         cliente = cliente2
     ##### Chama o LLM passando o nome do livro e armazena Resenha devolvida na variavel "resposta"
     for livro in lista_de_livros:
         resposta = cliente.models.generate_content(
-            model = "gemini-2.5-flash-lite",
+            model = "gemini-2.5-flash-lite-preview-09-2025",
             contents = f'''Vou te enviar o nome de um livro e quero que você obtenha uma resenha curta, em no máximo 2 linhas. Você deve retornar somente a resenha, sem explicações nem textos adicionais.
             
             Exemplo:
@@ -68,7 +68,7 @@ def obter_resenhas(lista_de_livros):
             Segue nome do livro: {livro}'''
         )
         ##### Exibe uma contagem regressiva na tela, aguardando para enviar requisicao ao LLM depois deste tempo, evitando estouro de cota
-        for cont in range(60, -1, -1):
+        for cont in range(13, -1, -1):
             print(f"{cont:02d}", end='\r', flush=True)
             time.sleep (1)
 

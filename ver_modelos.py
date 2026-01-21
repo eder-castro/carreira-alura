@@ -4,10 +4,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-cont = 0
-print("=== LISTA DE MODELOS ===")
-# Removemos o filtro 'if' que estava dando erro
-for modelo in client.models.list():
-    cont +=1
-    print(f"{cont} - Modelo: {modelo.name} - {modelo.input_token_limit}")
+GOOGLE_API_KEY_01 = os.getenv("GEMINI_API_KEY_01")
+GOOGLE_API_KEY_02 = os.getenv("GEMINI_API_KEY_02")
+
+cliente1 = genai.Client(api_key=GOOGLE_API_KEY_01)
+cliente2 = genai.Client(api_key=GOOGLE_API_KEY_02)
+
+print("Modelos disponíveis para você:")
+for model in cliente1.models.list():
+    if "flash" in model.name:
+        print(f"- {model.name}") # Copie o nome que aparecer aqui (ex: models/gemini-3.0-flash)
