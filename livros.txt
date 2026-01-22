@@ -31,8 +31,8 @@
 31-O Problema dos Três Corpos
 32-Rápido e devagar
 33-Sapiens
-33-Anti-Fragil
-34-As 33 estratégias de guerra
-35-O príncipe
-36-Lean startup
-37-The Thinking game
+34-Anti-Fragil
+35-As 33 estratégias de guerra
+36-O príncipe
+37-Lean startup
+38-The Thinking game

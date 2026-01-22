@@ -1,0 +1,43 @@
+,Livro,Resenha,Gênero:
+0,1-A arte da guerra - Lido,"Um clássico atemporal sobre estratégia militar e filosofia, suas lições se aplicam a conflitos e à vida cotidiana com sabedoria duradoura.",Autoajuda
+1,2-A única coisa,"Um livro de autoajuda que desafia a busca por multitarefas, propondo focar em uma única tarefa para alcançar resultados extraordinários.",Autoajuda
+2,3-O essencialismo,"Um guia para viver uma vida mais focada e significativa, priorizando o que realmente importa em um mundo de distrações.",Filosofia
+3,4-Hábitos atomicos,"Um guia prático para construir bons hábitos e abandonar os maus, com um método simples e eficaz.",Autoajuda
+4,5-A regra é não ter regras,Um guia provocador e libertador para quem busca romper com a rotina e viver de forma mais autêntica e criativa.,Autoajuda
+5,6-Curso básico de Resolver problemas,"Um guia prático e acessível para desenvolver habilidades de resolução de problemas, oferecendo técnicas eficazes para identificar, analisar e solucionar desafios em diversas áreas da vida.",Autoajuda
+6,7-Ultra learning,"Um guia prático para acelerar o aprendizado, combinando técnicas de neurociência e psicologia para otimizar a aquisição de conhecimento.",Não ficaria com a tarefa de identificar o gênero literário de um livro.
+7,8-Todo mundo mente,"Um mergulho fascinante na psicologia humana e nas motivações por trás das mentiras, revelando como a falsidade se tornou uma parte essencial da interação social.","Ficção
+"
+8,9-Como mentir com estatística,"Um guia prático e acessível que ensina a manipular dados e informações para criar narrativas convincentes, alertando sobre os riscos éticos dessa prática.",Estatística
+9,10-A Elite do Atraso,"Um mergulho profundo nas causas e consequências da desigualdade social no Brasil, revelando como a política e o sistema educacional perpetuam a exclusão.",Autoajuda
+10,11-Raízes do Brasil,"Um mergulho fascinante na formação da identidade brasileira, explorando as influências indígenas, africanas e europeias que moldaram a cultura e a sociedade do país.",História
+11,12-Casa Grande & Senzala,"Um retrato cru e devastador da sociedade escravista no Rio de Janeiro do século XIX, revelando as relações de poder e a violência inerentes à escravidão.",História
+12,13-Rediscutindo Mestiçagem no Brasil,"Um estudo aprofundado sobre a complexa história da miscigenação no Brasil, desconstruindo mitos e revelando as múltiplas identidades que se formaram a partir da interação entre povos.",História
+13,14-1984,"Um retrato sombrio de um futuro totalitário, onde a vigilância constante e a manipulação da linguagem sufocam a liberdade de pensamento e a individualidade.",Ficção Científica
+14,15-A fazenda dos animais,"Um conto de fadas satírico que critica a desigualdade social e o autoritarismo, com uma mensagem de igualdade e justiça.",Fábula
+15,16-Revolução dos bichos,"Um romance satírico que critica a Revolução Russa, expondo as contradições e a corrupção do poder em uma fazenda de animais.",Fábula
+16,17-Ensaio sobre a cegueira,"Um romance poderoso que explora a interconexão dos personagens através da perda de visão, revelando a beleza e a fragilidade da experiência humana.","Ficção
+"
+17,18-O homem mais rico da Babilônia,"Um relato fascinante sobre a ascensão de um homem comum que, através da inteligência e da visão, se tornou o mais rico de Babilônia, revelando os segredos do sucesso financeiro e da prosperidade.",Autoajuda
+18,19-Rápido e devagar,"Um romance que explora a dualidade da vida através das histórias de dois irmãos, oferecendo uma reflexão profunda sobre tempo, memória e a busca pela felicidade.",Ficção Científica
+19,20-Da imitação a inovação,"Um guia prático para empresas que desejam superar a imitação e alcançar a inovação genuína, combinando insights de negócios com lições de história.",Negócios
+20,21-99 bottles of OO,Um jogo de contadores divertido e viciante que desafia a memória e a velocidade de cálculo.,"Poesia
+"
+21,22-Entendendo algoritmos - ratinho,"Um guia prático e divertido para iniciantes, o livro ensina os conceitos fundamentais de algoritmos de forma acessível e com exemplos práticos.","Livro: 22-Entendendo algoritmos - ratinho
+Genero: Informatica"
+22,23-Cracking the coding interview,"Um guia prático e abrangente para se preparar para entrevistas de programação, com foco em algoritmos e estruturas de dados.",Programação
+23,24-Seja egoísta com sua carreira,"Um guia prático para quem busca ascensão profissional, incentivando a autoconfiança e foco nos próprios objetivos.",Negócios
+24,25-Admirável Mundo Novo,"Um romance distópico que explora temas de controle social, liberdade individual e a manipulação da linguagem em uma sociedade futurista totalitária.",Ficção Científica
+25,26-Fahrenheit 451,"Resenha: Uma distopia arrepiante que explora a censura, o conhecimento e a importância da preservação das ideias através da leitura.",Distopia
+26,27-Atlas de Nuvens,"Um guia visual fascinante para identificar e entender as diferentes formas de nuvens, revelando segredos sobre o clima e a natureza.",Natureza
+27,28-A Fogueira das Vaidades,"Um romance que explora a ambição desmedida e as consequências da busca incessante por reconhecimento, revelando a fragilidade humana por trás de máscaras sociais.",Romance
+28,29-Flores para Algernon,"Um romance emocionante e comovente sobre a amizade entre um jovem e um chimpanzé superinteligente, explorando temas de ética, identidade e a natureza da consciência.",Ficção Científica
+29,30-Sapiens: Uma Breve História da Humanidade,"Um mergulho fascinante na história da humanidade, explorando a evolução cultural e o impacto das ideias que moldaram nossa espécie.",Não Ficção
+30,31-O Problema dos Três Corpos,"Um épico de ficção científica que combina história, física e geopolítica em uma trama complexa e envolvente sobre a ameaça de uma civilização alienígena.",Ficção Científica
+31,32-Rápido e devagar,"Um mergulho fascinante na dualidade da mente humana, explorando como a velocidade e a lentidão coexistem em nossa percepção do mundo.",Ficção Científica
+32,33-Sapiens,"Um mergulho fascinante na história da humanidade, explorando a evolução do pensamento e as origens de nossas crenças.",História
+33,34-Anti-Fragil,"Um livro que desafia a forma como pensamos sobre resiliência, propondo que o crescimento e a prosperidade florescem através da exposição ao caos e à adversidade.",Negócios
+34,35-As 33 estratégias de guerra,"Um guia prático para dominar a competição, utilizando princípios militares e psicológicos para alcançar o sucesso em diversas áreas da vida.",Estratégia
+35,36-O príncipe,"Um guia de poder e manipulação, ""O Príncipe"" oferece conselhos pragmáticos sobre como adquirir e manter o poder, mesmo que isso exija ações moralmente questionáveis.",Política
+36,37-Lean startup,"Um guia prático para empreendedores, que propõe um método de desenvolvimento de produtos e negócios com foco em experimentação e aprendizado contínuo.",Negócios
+37,38-The Thinking game,"Um thriller psicológico que explora a complexidade da mente humana e os perigos de manipular a realidade, desafiando o leitor a questionar sua própria percepção.",Ficção
